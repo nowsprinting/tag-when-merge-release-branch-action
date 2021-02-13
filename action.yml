@@ -1,11 +1,14 @@
-name: 'Your name here'
-description: 'Provide a description here'
-author: 'Your name or organization here'
+name: 'Tag when merge release branch'
+description: 'Add tag when merge branch `release/x.y.z` or `releases/x.y.z` or `hotfix/x.y.z`'
+author: 'nowsprinting'
 inputs:
-  milliseconds: # change this
-    required: true
-    description: 'input description here'
-    default: 'default value if applicable'
+  prefix:
+    description: 'Version prefix for create tag. `refs/tags/` is unnecessary.'
+    required: false
+    default: ''
 runs:
   using: 'node12'
   main: 'dist/index.js'
+branding:
+  icon: 'tag'
+  color: 'purple'
