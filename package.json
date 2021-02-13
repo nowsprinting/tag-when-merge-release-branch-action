@@ -1,8 +1,8 @@
 {
-  "name": "tag-when-merge-release-branch-action",
+  "name": "typescript-action",
   "version": "0.0.0",
   "private": true,
-  "description": "Add tag when merge branch `release/x.y.z` or `releases/x.y.z` or `hotfix/x.y.z`",
+  "description": "TypeScript template action",
   "main": "lib/main.js",
   "scripts": {
     "build": "tsc",
@@ -15,18 +15,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nowsprinting/tag-when-merge-release-branch-action.git"
+    "url": "git+https://github.com/actions/typescript-action.git"
   },
   "keywords": [
     "actions",
     "node",
     "setup"
   ],
-  "author": "Koji Hasegawa",
+  "author": "",
   "license": "MIT",
   "dependencies": {
-    "@actions/core": "^1.2.6",
-    "@actions/github": "^4.0.0"
+    "@actions/core": "^1.2.6"
   },
   "devDependencies": {
     "@types/jest": "^26.0.20",
